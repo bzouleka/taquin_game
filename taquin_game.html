@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="taquin.css">
@@ -12,6 +12,7 @@
 <body>
 
 <h1>Le jeu du Taquin</h1>
+<div id="tableau">
 <table id="tab_taquin">
 <tr>
 
@@ -30,8 +31,18 @@
     <td id="0"></td>
 </tr>
 </table>
+</div>
 <div>
-    <button id="foo" class="btn btn_primary" ">Shuffle </button>
+    <p id="message"></p>
+    <button id="foo" class="btn btn_primary" onclick="start()">Shuffle </button></br>
+
+</div>
+</br>
+<div>
+    <button id="gauche" class="btn btn_info" onclick="start()">Gauche </button>
+    <button id="haut" class="btn btn_info" onclick="start()">Haut </button>
+    <button id="droite" class="btn btn_info" onclick="start()">Droite </button>
+    <button id="bas" class="btn btn_info" onclick="start()">Bas </button>
 </div>
 
 </body>

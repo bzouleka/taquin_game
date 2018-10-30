@@ -3,6 +3,10 @@ h1{
     color: blue;
 }
 
+#tableau {
+    justify-content: center;
+}
+
 table{
     background-color: lightblue;
     margin: 125px 500px 50px 550px;
@@ -22,11 +26,24 @@ td {
 div{
     align-content: center;
     justify-content: center;
+    margin: auto auto auto auto;
 }
 #foo {
     font-size: large;
-    margin-left: 650px;
+    margin-left: 670px;
     align-content: center;
     text-align: center;
     color: darkblue;
+}
+button {
+    font-size: large;
+    margin-left: 670px;
+    align-content: center;
+    text-align: center;
+}
+
+#message {
+    text-align: center;
+    /*margin-left: 0px;*/
+    color: red;
 }

@@ -45,6 +45,16 @@ function paire(melange) {
     }
 }
 
+
+function removeTable(){
+    let impaire= shuffle();
+    if (impaire % 2 !== 0 ){
+        return tabT;
+    }else{
+        paire(tabT);
+    }
+}
+
 function start() {
     let t = shuffle(tabT);
     afficher(t);
@@ -52,24 +62,44 @@ function start() {
         paire(t);
         document.getElementById('message').innerHTML = ("Good luck!!");
     } else {
+        removeTable();
         document.getElementById('message').innerHTML = ("Pas de solution valide!!");
     }
 }
 
 
-function move(){
-
-    let vide = ' ';
-    let G = document.getElementById("gauche");
-    let D = document.getElementById("droite");
-
-    for (let i = 0; i < tabT.length; i++){
-        if (vide){}
 
 
-    }
 
-}
+
+
+
+
+
+// function keyCommand(keyCodeNumber){
+//
+//     let button = document.getElementById("bouton");
+//     // utiliser les fleches du clavier pour bouger les case du taquin
+//     let gauche = 37;
+//     let haut = 38;
+//     let droite = 39;
+//     let bas = 40;
+//
+//     switch (keyCodeNumber) {
+//         case gauche:
+//             button.innerHTML = 'Gauche';
+//             break;
+//         case haut:
+//             button.innerHTML = 'Haut';
+//             break;
+//         case droite:
+//             button.innerHTML = 'Droite';
+//             break;
+//         case bas:
+//             button.innerHTML = 'Bas';
+//             break;
+//     }
+// }
 
 
 
